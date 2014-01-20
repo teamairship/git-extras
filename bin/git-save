@@ -1,0 +1,8 @@
+#!/bin/sh
+
+msg=$1
+
+echo "# adding..."
+git add -A
+echo "# committing..."
+git commit -m "$msg"

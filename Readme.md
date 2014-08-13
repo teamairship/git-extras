@@ -13,7 +13,7 @@ $ make install
 One-liner:
 
 ```bash
-$ (cd /tmp && git clone --depth 1 https://github.com/visionmedia/git-extras.git && cd git-extras && sudo make install)
+$ (cd /tmp && git clone --depth 1 https://github.com/t2/git-extras.git && cd git-extras && sudo make install)
 ```
 
 [MacPorts](http://www.macports.org/)

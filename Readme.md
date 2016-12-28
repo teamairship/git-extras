@@ -16,24 +16,6 @@ One-liner:
 $ (cd /tmp && git clone --depth 1 https://github.com/t2/git-extras.git && cd git-extras && sudo make install)
 ```
 
-[MacPorts](http://www.macports.org/)
-
-```bash
-$ sudo port install git-extras
-```
-
-[Brew](http://github.com/mxcl/homebrew/) (buggy):
-
-```bash
-$ brew install git-extras
-```
-
-## Screencasts
-
-  Just getting started? Check out these screencasts:
-
- - [introduction](https://vimeo.com/45506445) -- covering git-ignore, git-setup, git-changelog, git-release, git-effort and more
-
 ## Commands
 
  - `git extras`
@@ -66,6 +48,8 @@ $ brew install git-extras
  - `git promote`
  - `git local-commits`
  - `git archive-file`
+ - `git save`
+ - `git polish`
 
 ## git-extras
 
@@ -94,9 +78,9 @@ $ git extras update
 
 Sets up the `gh-pages` branch.  (See [GitHub Pages](http://pages.github.com/) documentation.)
 
-## git-[feature|refactor|bug] [finish] &lt;name&gt;
+## git-[feature|refactor|bug|polish] [finish] &lt;name&gt;
 
-Create the given feature, refactor, or bug branch `name`:
+Create the given feature, refactor, bug, or polish branch `name`:
 
 ```bash
 $ git feature dependencies
@@ -116,7 +100,7 @@ $ git checkout master
 $ git feature finish dependencies
 ```
 
-All of this works with `feature`, `bug`, or `refactor`.
+All of this works with `feature`, `bug`, `refactor`, or `polish`.
 
 ## git-contrib &lt;author&gt;
 
@@ -529,3 +513,12 @@ List all commits on the local branch that have not yet been sent to origin. Any 
 ## git-archive-file
 
 Creates an zip archive of the current git repository. The name of the archive will depend on the current HEAD of your git respository.
+
+## git-save [commit title]
+
+Stage all changed files, create commit with title, open default editor to add detailed commit message.
+
+```bash
+git save "Feature: Add Git Save"
+```
+

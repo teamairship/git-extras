@@ -6,3 +6,4 @@ echo "# adding..."
 git add -A
 echo "# committing..."
 git commit -m "$msg"
+git commit --amend

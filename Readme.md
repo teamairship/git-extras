@@ -1,20 +1,57 @@
-# Git Extras
-
-Little git extras.
+# Airship Git Utilities and Flow
 
 ## Installation
-
-Clone / Tarball:
-
-```bash
-$ make install
-```
-
-One-liner:
 
 ```bash
 $ (cd /tmp && git clone --depth 1 https://github.com/teamairship/git-extras.git && cd git-extras && sudo make install)
 ```
+
+---
+
+## Flow
+
+### New Project
+
+```bash
+cd /project-directory
+git going git@github.com:teamairship/repo-name.git
+** start creating value **
+```
+
+### New Feature
+
+```bash
+git feature <JIRA-ID>
+** write some code & test it **
+git save "commit message"
+git push origin feature/<JIRA-ID>
+```
+
+### New Bug Fix
+
+```bash
+git bug <JIRA-ID>
+** fix the bug & test it **
+git save "commit message"
+git push origin bug/<JIRA-ID>
+```
+
+### New Code Refactor
+
+```bash
+git refactor <JIRA-ID>
+** refactor code & test it **
+git save "commit message"
+git push origin refactor/<JIRA-ID>
+```
+
+### Release
+
+```bash
+git release <Version>
+```
+
+---
 
 ## Commands
 
@@ -39,6 +76,7 @@ $ (cd /tmp && git clone --depth 1 https://github.com/teamairship/git-extras.git 
 - `git repl`
 - `git undo`
 - `git gh-pages`
+- `git going`
 - `git setup`
 - `git touch`
 - `git obliterate`

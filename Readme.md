@@ -327,7 +327,7 @@ build
 *.log
 ```
 
-# git-info
+## git-info
 
 Show information about the repo:
 

@@ -1,0 +1,15 @@
+#!/bin/sh
+
+repo=$1
+
+git init
+git remote add origin $repo
+git commit --allow-empty -m "create main"
+git push origin main
+git checkout -b staging
+git commit --allow-empty -m "create staging"
+git push origin staging
+git checkout -b develop
+git commit --allow-empty -m "create develop"
+git push origin develop
+git checkout main
